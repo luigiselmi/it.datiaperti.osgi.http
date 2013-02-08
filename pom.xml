@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>it.datiaperti.osgi</groupId>
+  <artifactId>it.datiaperti.osgi.http</artifactId>
+  <packaging>bundle</packaging>
+  <version>0.0.1</version>
+  <name>OSGi Http Test</name>
+  <description>Simple HelloWorld servlet</description>
+  
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.1.0</version>
+                 <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                    	<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                    	<Bundle-Category>sample</Bundle-Category>
+                        <Bundle-Activator>
+                            it.datiaperti.osgi.http.HelloWorldActivator
+                        </Bundle-Activator>
+                        <Export-Package>
+                            it.datiaperti.osgi.http
+                        </Export-Package>
+                        
+                    </instructions>
+                    <obrRepository>file:/home/luigi/books/programming/Java/OSGi/OSGi_Felix_Code_Examples/releases</obrRepository>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <inherited>true</inherited>
+		        <configuration>
+		          <source>1.5</source>
+		          <target>1.5</target>
+		        </configuration>
+      		</plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <scope>provided</scope>
+      		<version>4.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+            <version>4.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    
+    <distributionManagement>
+    <!-- releases repo -->
+    <repository>
+      <id>repo-rel</id>
+      <url>file:/home/luigi/books/programming/Java/OSGi/OSGi_Felix_Code_Examples/releases</url>
+    </repository>
+  </distributionManagement>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+</project>

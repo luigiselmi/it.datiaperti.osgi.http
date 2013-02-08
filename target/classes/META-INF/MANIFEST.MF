@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: it.datiaperti.osgi.http;uses:="javax.servlet,javax.ser
+ vlet.http,org.osgi.framework"
+Built-By: luigi
+Bundle-Category: sample
+Tool: Bnd-0.0.357
+Bundle-Name: OSGi Http Test
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.7.0_09
+Bundle-Version: 0.0.1
+Bnd-LastModified: 1360264495905
+Bundle-ManifestVersion: 2
+Bundle-Activator: it.datiaperti.osgi.http.HelloWorldActivator
+Bundle-Description: Simple HelloWorld servlet
+Import-Package: it.datiaperti.osgi.http,javax.servlet,javax.servlet.ht
+ tp,org.osgi.framework;version="1.5"
+Bundle-SymbolicName: it.datiaperti.osgi.http
+

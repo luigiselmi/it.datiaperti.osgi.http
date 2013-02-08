@@ -1,0 +1,5 @@
+it/datiaperti/osgi/http/Activator.class
+it/datiaperti/osgi/http/HelloWorld.class
+it/datiaperti/osgi/http/TestServlet.class
+it/datiaperti/osgi/http/HelloWorldActivator.class
+it/datiaperti/osgi/http/TestFilter.class
