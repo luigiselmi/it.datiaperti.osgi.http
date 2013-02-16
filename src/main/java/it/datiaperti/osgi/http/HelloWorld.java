@@ -12,6 +12,6 @@ public class HelloWorld extends HttpServlet
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
   {
-    resp.getWriter().write("Hello World");      
+    resp.getWriter().write("Hello World. This is the servlet OSGi bundle message.");      
   } 
 }

@@ -18,7 +18,7 @@ public class HelloWorldActivator implements BundleActivator
   {
     Hashtable props = new Hashtable();
     props.put("alias", "/hello");
-    props.put("init.message", "Hello World!");
+    props.put("init.message", "Hello World Service Registration!");
 
     this.registration = context.registerService(Servlet.class.getName(), new HelloWorld(), props);
   }

@@ -25,7 +25,6 @@
                         <Export-Package>
                             it.datiaperti.osgi.http
                         </Export-Package>
-                        
                     </instructions>
                     <obrRepository>file:/home/luigi/books/programming/Java/OSGi/OSGi_Felix_Code_Examples/releases</obrRepository>
                 </configuration>

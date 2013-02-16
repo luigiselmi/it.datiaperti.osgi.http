@@ -8,7 +8,7 @@ Bundle-Name: OSGi Http Test
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.7.0_09
 Bundle-Version: 0.0.1
-Bnd-LastModified: 1360264495905
+Bnd-LastModified: 1361006500649
 Bundle-ManifestVersion: 2
 Bundle-Activator: it.datiaperti.osgi.http.HelloWorldActivator
 Bundle-Description: Simple HelloWorld servlet
